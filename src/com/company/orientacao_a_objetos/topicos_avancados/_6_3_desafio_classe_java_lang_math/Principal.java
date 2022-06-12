@@ -1,4 +1,4 @@
-package com.company.orientacao_a_objetos._6_topicos_avancados._6_3_desafio_classe_java_lang_math;
+package com.company.orientacao_a_objetos.topicos_avancados._6_3_desafio_classe_java_lang_math;
 
 import java.util.Scanner;
 
