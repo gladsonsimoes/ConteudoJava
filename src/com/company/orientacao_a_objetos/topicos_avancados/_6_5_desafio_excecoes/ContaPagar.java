@@ -1,4 +1,4 @@
-package com.company.orientacao_a_objetos._6_topicos_avancados._6_5_desafio_excecoes;
+package com.company.orientacao_a_objetos.topicos_avancados._6_5_desafio_excecoes;
 
 public class ContaPagar extends Conta {
     private Fornecedor fornecedor;
