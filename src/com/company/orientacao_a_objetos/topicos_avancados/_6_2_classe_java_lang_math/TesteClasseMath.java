@@ -1,4 +1,4 @@
-package com.company.orientacao_a_objetos._6_topicos_avancados._6_2_classe_java_lang_math;
+package com.company.orientacao_a_objetos.topicos_avancados._6_2_classe_java_lang_math;
 
 import static java.lang.Math.PI;
 import static java.lang.Math.max;
