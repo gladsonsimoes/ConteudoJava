@@ -1,4 +1,4 @@
-package com.company.orientacao_a_objetos._6_topicos_avancados._6_3_desafio_classe_java_lang_math;
+package com.company.orientacao_a_objetos.topicos_avancados._6_3_desafio_classe_java_lang_math;
 
 public class MegaSena {
     private static final int QUANTIDADE_NUMEROS = 6;
