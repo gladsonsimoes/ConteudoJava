@@ -1,0 +1,42 @@
+Para ver com mais facilidade baixando o arquivo do github:
+Ordem dos arquivos:
+
+
+[# variaveis]
+
+Lista dos exercicios (Lógica de Programação)
+
+[01 - Variaveis e constantes ]
+[02 - Operadores]
+[03 - Estrutura De Decisao ] - if | switch
+[04 - Iteracao] - for | while
+[05 - Vetores ] -  Vetor = []
+[06 - Metodos ]- static | void e return
+[07 - programacao orientada a objetos ] - class | static | get e set - Getter and setter
+[08 - leitura e escrita de dados em arquivos] - ArrayList | throws | Path | readAllLines
+[09 - ALgoritmos Avançado ]
+[10 - Acessando Atributos de Objetos]
+
+Lista de exercicios (Orientacao a objetos)
+
+Parte 1
+
+[01 - Criando atributos de objetos]
+[02 - Composição Objetos ]
+[03 - Valores Padrão ]
+[04 - array]
+
+Parte 2
+
+[01 - o objeto This]
+[02 - Teste Construtor(Construtores)]
+[03 - Encapsulamento]
+[04 - modificador_de_acesso_default]
+[05 - modificadores_static_e_final]
+[06 - desafio_objeto_this_e_construtores]
+[07 - desafio_static_e_final_5_11](
+[08 - enumeracoes 5 12]
+[09 - desafio_pacotes_e_enumeracoes_5_13]
+[10 - heranca_e_modificador_protected_5_14]
+[11 - sobreposicao 5 16 ]
+[12 - desafio heranca e sobreposicao_5_17]
