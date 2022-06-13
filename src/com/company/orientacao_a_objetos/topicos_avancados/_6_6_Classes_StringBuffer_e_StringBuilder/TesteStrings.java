@@ -10,7 +10,7 @@ public class TesteStrings {
         StringBuilder sb = new StringBuilder("Olá"); //com StringBuilder
         sb.append(" Pessoal!"); //append é para acrescentar
 
-        String resultado = sb.toString(); //converti como uma String
+        String resultado = sb.toString(); //converti o "sb" como uma String usando toString();
         System.out.println("com StringBuilder: " + resultado);
 
     }
