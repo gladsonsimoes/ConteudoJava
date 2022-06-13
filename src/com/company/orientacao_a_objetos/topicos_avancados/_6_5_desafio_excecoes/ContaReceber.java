@@ -1,13 +1,52 @@
 package com.company.orientacao_a_objetos.topicos_avancados._6_5_desafio_excecoes;
 
+
 public class ContaReceber extends Conta {
     private Cliente cliente;
 
-    public void receber() {
-        System.out.println("Recebendo a conta: " + this.getDescricao()
-                + " no valor de  " + this.getValor() +
-                " e vencimento em " + getDataVencimento() +
-                " fornecedor: " + this.getCliente().getNome() + ".");
+    public ContaReceber() {
+    }
+
+    public ContaReceber(Cliente cliente, String descricao, Double valor, String dataVencimento) {
+        this.cliente = cliente;
+        this.setDescricao(descricao);
+        this.setValor(valor);
+        this.setDataVencimento(dataVencimento);
+    }
+
+    public void exibirDetalhes() {
+        System.out.println("\nConta a Receber");
+        System.out.println("=================================");
+        System.out.println("Cliente: " + this.getCliente().getNome());
+        System.out.println("Descrição: " + this.getDescricao());
+        System.out.println("Valor: " + this.getValor());
+        System.out.println("Data de vencimento: " + this.getDataVencimento());
+        System.out.println("Situação: " + this.getSituacaoConta());
+        System.out.println("=================================");
+    }
+
+    public void cancelar() throws OperacaoContaException{
+        if (this.getValor() > 50000d){
+            throw new OperacaoContaException("Essa conta a receber não pode ser cancelada. " +
+                    "É muito dinheiro para deixar de receber: " + this.getDescricao());
+        } else {
+            super.cancelar();
+        }
+    }
+
+    public void receber(){
+        if (SituacaoConta.PAGA.equals(this.getSituacaoConta())){
+            System.out.println("Não pode receber uma conta que já está paga: "
+                    + this.getDescricao() + ".");
+        } else if (SituacaoConta.CANCELADA.equals(this.getSituacaoConta())) {
+            System.out.println("Não pode receber uma conta que está cancelada: "
+                    + this.getDescricao() + ".");
+        } else {
+            System.out.println("Recebendo conta " + this.getDescricao() + " no valor de "
+                    + this.getValor() + " e vencimento em " + this.getDataVencimento()
+                    + " do cliente " + this.getCliente().getNome() + ".");
+            this.situacaoConta = SituacaoConta.PAGA;
+        }
     }
 
     public Cliente getCliente() {
@@ -17,33 +56,4 @@ public class ContaReceber extends Conta {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
-
-    public ContaReceber() {
-    }
-
-    public ContaReceber(Cliente cliente, String descricao, double valor, String dataVencimento) {
-        this.cliente = cliente;
-        this.descricao = descricao;
-        this.valor = valor;
-        this.dataVencimento = dataVencimento;
-    }
-    public void cancelar() {
-        if (valor >= 50000d) {
-            System.out.println(this.getDescricao() + " a conta a receber não pode ser cancelada , pois o valor: " + this.getValor() + " é muito dinheiro para cancelar ");
-        } else {
-            super.cancelar(); //o super vai pegar o metodo da Classe Conta , em vez de rescrever o metodo.
-        }
-    }
-    public void exibirDetalhes(){
-            System.out.println("Conta a receber");
-            System.out.println("=======================");
-            System.out.println("Cliente: " + this.getCliente().getNome());
-            System.out.println("Descrição: " + this.getDescricao());
-            System.out.println("Valor: " + this.getValor());
-            System.out.println("Vencimento: " + this.getDataVencimento());
-            System.out.println("Situação: " + this.getsituacaoConta());
-            System.out.println("========================");
-            System.out.println();
-    }
-
 }
