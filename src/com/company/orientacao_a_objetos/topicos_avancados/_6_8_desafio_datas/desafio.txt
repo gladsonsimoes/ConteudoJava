@@ -1,0 +1,14 @@
+
+Dica 1: para somar um número de semanas à uma data, use:
+
+variavelDoTipoCalendar.add(Calendar.WEEK_OF_YEAR, numeroDeSemanas);
+
+Dica 2: Use o método converterDateParaCalendar(), que já está pronto,
+ para converter o tipo Date para Calendar. Você vai precisar disso!
+
+Veja que para usar a classe CalculadoraGravidez, deve-se instanciá-la passando
+como parâmetro do construtor a data do último período menstrual e depois basta chamar os métodos
+que calcula as datas desejadas.
+A classe Principal recebe a entrada do teclado do usuário, converte o texto para o tipo Date,
+instancia um objeto da classe CalculadoraGravidez e realiza os cálculos, exibindo os resultados na tela.
+Essa classe está pronta para você, com exceção do método converterEmData(), que você deve implementar.
