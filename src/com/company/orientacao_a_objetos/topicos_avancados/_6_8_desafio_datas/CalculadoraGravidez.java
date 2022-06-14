@@ -17,6 +17,7 @@ public class CalculadoraGravidez {
     }
 
     public Date calcularDataEstimadaConcepcao() {
+        double dataEstimada =
         // implementar cálculo de data estimada da concepção
         // 2 semanas após a data do último período menstrual
         return null;
