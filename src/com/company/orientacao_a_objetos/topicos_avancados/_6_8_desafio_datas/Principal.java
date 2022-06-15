@@ -37,7 +37,7 @@ public class Principal {
             return formatador.format(data);
         }
         private Date converterEmData (String texto) throws ParseException {
-            // implementar conversão de texto para data no formato dd/MM/yyyy
-            return null;
+            DateFormat conversor =  new SimpleDateFormat("dd/MM/yyyy");
+            return conversor.parse(texto);
         }
 }
