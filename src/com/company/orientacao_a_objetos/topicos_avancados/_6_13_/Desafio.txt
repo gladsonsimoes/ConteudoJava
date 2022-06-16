@@ -3,12 +3,25 @@ package com.company.orientacao_a_objetos._6_topicos_avancados._6_13_desafio_coll
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
-/*
-O custo com políticos no Brasil é um dos mais altos no mundo.
-O valor do contra-cheque de um político corresponde a cerca de um quarto de tudo o que recebem por meio de inúmeras verbas e auxílios extraordinários.
-Você, político honesto e programador Java, resolveu desenvolver um software para calcular os salários dos políticos por partido e cargo. Esse software irá lhe ajudar a propor mudanças dentro do governo.
-As classes Cargo e Politico foram fornecidas para você pelo Ministério Público Eleitoral.
-A classe Cargo representa o cargo de um político, como por exemplo "vereador", "deputado estadual" ou "prefeito". Um cargo possui uma descrição e o valor do salário.
+
+O custo com políticos no Brasil
+ é um dos mais altos no mundo.
+O valor do contra-cheque de um político
+ corresponde a cerca de um quarto de tudo
+ o que recebem por meio de inúmeras verbas
+ e auxílios extraordinários.
+Você, político honesto e programador Java,
+ resolveu desenvolver um software para calcular
+ os salários dos políticos por partido e cargo.
+ Esse software irá lhe ajudar a propor mudanças dentro do governo.
+As classes Cargo e Politico foram fornecidas para 
+você pelo Ministério Público Eleitoral.
+A classe Cargo representa o
+ cargo de um político, como por exemplo
+ "vereador", "deputado estadual" ou "prefeito".
+ Um cargo possui uma descrição e o valor do salário.
+
+
 import java.math.BigDecimal;
 public class Cargo {
 	private String descricao;
@@ -26,7 +39,11 @@ public class Cargo {
 		this.salario = salario;
 	}
 }
-A classe Politico representa, errrr... um político. Essa classe possui os atributos "nome" e "cargo", que referencia um objeto do tipo Cargo.
+
+A classe Politico representa, errrr... um político.
+ Essa classe possui os atributos "nome" e "cargo",
+ que referencia um objeto do tipo Cargo.
+
 public class Politico {
 	private String nome;
 	private Cargo cargo;
@@ -43,8 +60,14 @@ public class Politico {
 		this.cargo = cargo;
 	}
 }
-Agora que você já tem as classes Cargo e Politico, precisa criar uma outra classe para organizar os políticos e seus partidos e calcular os gastos totais dos salários.
-Para sua sorte, estamos entregando para você a classe Governo, que está quase pronta. As únicas coisas que faltam são as implementações os métodos calcularGastosComSalario() e calcularGastosComSalarioParaCargo().
+
+Agora que você já tem as classes Cargo e Politico, 
+precisa criar uma outra classe para organizar os políticos e 
+seus partidos e calcular os gastos totais dos salários.
+Para sua sorte, estamos entregando para você a classe Governo, 
+que está quase pronta. As únicas coisas que faltam são as implementações os métodos 
+calcularGastosComSalario() e calcularGastosComSalarioParaCargo().
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
@@ -79,6 +102,7 @@ public class Governo {
 		// e cálculo dos salários
 	}
 }
+
 A classe Governo possui uma variável de instância para armazenar os políticos por partido. Para isso, é usado um mapa (interface Map).
 private Map<String, List<Politico>> partidosPoliticos;
 Essa linha está declarando um mapa (do Collections Framework) onde a chave é do tipo String e o valor do tipo List. Na chave do mapa, deve-se atribuir a sigla do partido. No valor, atribui-se um objeto do tipo List, como por exemplo um ArrayList.
