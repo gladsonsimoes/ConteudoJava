@@ -21,7 +21,7 @@ public class TesteSetHashSet{
         imprimirAlunos(alunos);
     }
     private static void imprimirAlunos(Set<Aluno> alunos){
-        for (Aluno a : alunos ){
+        for (Aluno a : alunos ){ //aqui vai selecionando os alunos 
             System.out.println("Nome: " + a.getNome());
         }
     }
