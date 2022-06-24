@@ -1,4 +1,4 @@
-package com.company.orientacao_a_objetos.mais_detalhes_e_framework;
+package com.company.orientacao_a_objetos.mais_detalhes_e_framework._7_1_metodos_da_classe_string;
 
 public class ExemploClassesString {
 
