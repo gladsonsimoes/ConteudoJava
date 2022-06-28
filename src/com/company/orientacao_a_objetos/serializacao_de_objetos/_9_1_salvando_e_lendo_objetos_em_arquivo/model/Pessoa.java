@@ -1,4 +1,4 @@
-package com.company.orientacao_a_objetos.serializacao_de_objetos._9_1_.model;
+package com.company.orientacao_a_objetos.serializacao_de_objetos._9_1_salvando_e_lendo_objetos_em_arquivo.model;
 
 import java.io.Serializable;
 
