@@ -5,7 +5,7 @@ import java.net.Socket;
 
 public class Client {
     public static void main(String[] args) throws IOException {
-        Socket socket = new Socket("192.168.0.1" , 3333); //ip do servidor e a porta
+        Socket socket = new Socket("192.168.0.1" , 3333); //acessar o ip do servidor e a porta
 
         OutputStream saida = socket.getOutputStream(); //receber o ip do cliente //para receber
 
