@@ -16,7 +16,7 @@ public class Client {
         pedido.setDescricao("Pasta de dente");
         pedido.setQuantidade(2);
 
-        objectOutput.writeObject(pedido);
+        objectOutput.writeObject(pedido); //ele envia o pedido para o " InputStream entrada = socket.getInputStream(); "
 
 
         //receber objeto pela rede
