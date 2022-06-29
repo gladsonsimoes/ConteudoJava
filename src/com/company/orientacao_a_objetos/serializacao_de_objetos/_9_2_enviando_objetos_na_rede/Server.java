@@ -8,7 +8,7 @@ public class Server {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-        ServerSocket server = new ServerSocket(3333);
+        ServerSocket server = new ServerSocket(3333); //porta do servidor
 
         System.out.println("Aguardando conexão...");
         Socket socket = server.accept(); //Ele para aqui e aguarda conexões
@@ -22,8 +22,8 @@ public class Server {
         System.out.println("Descrição: " + pedido.getDescricao());
         System.out.println("Quantidade: " + pedido.getQuantidade());
 
-        OutputStream saida = socket.getOutputStream();
-        DataOutput dataOutput = new DataOutputStream(saida);
+        OutputStream saida = socket.getOutputStream(); //recebendo do servidor
+        DataOutput dataOutput = new DataOutputStream(saida); //recebendo do servidor
         dataOutput.writeUTF("Recebido com sucesso");
 
         server.close();

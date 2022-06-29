@@ -2,30 +2,32 @@ package com.company.orientacao_a_objetos.serializacao_de_objetos._9_2_enviando_o
 
 import java.io.*;
 import java.net.Socket;
-import java.sql.SQLOutput;
 
 public class Client {
     public static void main(String[] args) throws IOException {
-        Socket socket = new Socket("192.168.0.1" , 3333);
+        Socket socket = new Socket("192.168.0.1" , 3333); //ip do servidor e a porta
 
-        OutputStream saida = socket.getOutputStream();
-        ObjectOutput objectOutput = new ObjectOutputStream(saida);
+        OutputStream saida = socket.getOutputStream(); //receber o ip do cliente //para receber
 
-        Pedido pedido = new Pedido();
+        ObjectOutput objectOutput = new ObjectOutputStream(saida); //Output para enviar
+
+        Pedido pedido = new Pedido(); //algo que desejo enviar
         pedido.setCodigo(2l);
         pedido.setDescricao("Pasta de dente");
         pedido.setQuantidade(2);
 
         objectOutput.writeObject(pedido);
 
-        //receber objeto pela rede
 
-        InputStream entrada = socket.getInputStream();
-        DataInputStream dataInputStream = new DataInputStream(entrada);
+        //receber objeto pela rede
+        InputStream entrada = socket.getInputStream(); //envia
+        DataInputStream dataInputStream = new DataInputStream(entrada); //envia
         System.out.println("Recebeu do servidor: " + dataInputStream.readUTF());
 
         socket.close();
 
+        //InputStream = enviar
+        //DataInputStream = enviar
 
     }
 }
