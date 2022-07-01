@@ -7,8 +7,8 @@ public class SwitchCaseComString {
         
         
         
-        //antes do java 7 não podia fazer switch case com String como esse
-        switch (carro){
+            //antes do java 7 não podia fazer switch case com String como esse
+            switch (carro){
             case "Audi":
                 System.out.println("Alemão");
                    break;
