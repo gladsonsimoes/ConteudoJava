@@ -21,7 +21,7 @@ public class SwitchCaseComString {
             default:
                 System.out.println("Não informou nenhum carro!");
                 
-           //só podia se usar String em estrutura de decisão usando apenas o if e else!
+           //só podia usar String em estrutura de decisão usando apenas o if e else!
            if (carro.equals("Audi")){
             System.out.println("Alemão");
            } else if (carro.equals("Ferrari")){
