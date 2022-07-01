@@ -7,7 +7,7 @@ public class SwitchCaseComString {
         
         
         
-        //antes do java 7 não podia fazer switch case com String
+        //antes do java 7 não podia fazer switch case com String como esse
         switch (carro){
             case "Audi":
                 System.out.println("Alemão");
@@ -21,7 +21,7 @@ public class SwitchCaseComString {
             default:
                 System.out.println("Não informou nenhum carro!");
                 
-           //antes do java 7 podia se usar String em estrutura de decisão usando apenas o if e else
+           //só podia se usar String em estrutura de decisão usando apenas o if e else!
            if (carro.equals("Audi")){
             System.out.println("Alemão");
            } else if (carro.equals("Ferrari")){
